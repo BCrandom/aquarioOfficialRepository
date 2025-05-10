@@ -1,5 +1,5 @@
 # Aquario
-Aquario esta bien chido (no se que poner aca)
+Repositorio para el desarrollo de la página web de el proyecto "Aquario".
 
 ## Colaboradores
 - Alixmar Machuca
