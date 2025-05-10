@@ -7,7 +7,7 @@ const port = 3000
 const main_routes = require("./controller/main_router")
 
 app.set('port', process.env.PORT || port)
-app.use(express.static('views/public'));
+app.use(express.static(path.join(__dirname, 'views/public')));
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, '')));
