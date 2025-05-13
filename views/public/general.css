@@ -1,0 +1,14 @@
+#navBarList {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
+}
+
+.navBarItem {
+    padding: 10px;
+}
+
+.navBarLink {
+    text-decoration: none;
+}
