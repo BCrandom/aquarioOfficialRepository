@@ -16,7 +16,7 @@ Herramientas a utilizar:
 
 COMO CLONAR EL REPOSITORIO:
 Colocar el siguiente comando en la terminal de vscode:
-git clone https://github.com/usuario/repositorio.git
+git clone https://github.com/BCrandom/aquarioOfficialRepository
 
 **Crea una nueva rama (para trabajar sin afectar la rama principal)**
 git checkout -b mi-rama-nueva
