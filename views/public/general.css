@@ -1,14 +1,31 @@
+/*
+para la barra de navegacion, el footer, la paleta de colores 
+y otras cuestiones que se manejen en todos-mayoria de archivos
+*/
+
+nav {
+    padding: 0;
+    margin: 0;
+}
+
 #navBarList {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    align-items: center;
+    padding: 20px;
     list-style: none;
 }
 
 .navBarItem {
-    padding: 10px;
+    padding: 0 5px 0 5px;
 }
 
 .navBarLink {
     text-decoration: none;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    font-weight: bold;
 }
