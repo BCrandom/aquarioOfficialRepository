@@ -1,0 +1,20 @@
+#hero-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('/src/imgs/about/heroabout.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    color: #ffffff;
+    text-shadow: 0 1px 1px black;
+    font-weight: 900;
+    /* filter: brightness(50%); */
+}
+#hero-title {
+    font-family: 'cinzel';
+    font-weight: 900;
+}
