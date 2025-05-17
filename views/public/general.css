@@ -2,6 +2,35 @@
 para la barra de navegacion, el footer, la paleta de colores 
 y otras cuestiones que se manejen en todos-mayoria de archivos
 */
+@font-face {
+    font-family: 'against';
+    src: url('/src/fonts/Against/against\ regular.otf');
+}
+@font-face {
+    font-family: 'cinzel';
+    src: url('/src/fonts/Cinzel/CinzelDecorative-Regular.otf');
+}
+@font-face {
+    font-family: 'creato';
+    src: url('/src/fonts/Creato/CreatoDisplay-Regular.otf');
+}
+@font-face {
+    font-family: 'recoleta';
+    src: url('/src/fonts/Recoleta/Recoleta-RegularDEMO.otf');
+}
+
+#against {
+    font-family: 'against';
+}
+#cinzel {
+    font-family: 'cinzel';
+}
+#creato {
+    font-family: 'creato';
+}
+#recoleta {
+    font-family: 'recoleta';
+}
 
 nav {
     padding: 0;
