@@ -13,7 +13,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, '')));
 
 /* rutas principales */
-app.use("/", main_routes)
+app.use(main_routes)
 /* rutas de tarjetas */
 
 app.listen(port, () => {
