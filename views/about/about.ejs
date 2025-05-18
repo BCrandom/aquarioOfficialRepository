@@ -25,9 +25,9 @@
     <div id="aboutAquario">
         <h2 id="about-title" class="sub-title">Sobre Nosotros</h2>
         <div id="about-inside">
-            <p id="abt-cntn-1" class="about-content content-gap">En un mundo donde la riqueza cultural enfrenta el desafío de la modernización y el olvido, Aquario nace como un faro de innovación, combinando tecnología y tradición para revitalizar la identidad cultural del estado.</p>
+            <p id="abt-cntn-1" class="about-content content-gap">En un mundo donde la riqueza cultural enfrenta el desafío de la modernización y el olvido, <b><i>Aquario</i> nace como un faro de innovación</b>, combinando tecnología y tradición para <b>revitalizar la identidad cultural del estado.</b></p>
             <img src="/src/imgs/logos/aquariowobg.png" alt="logo de aquario" title="logo de Aquario" id="about-img" class="content-gap">
-            <p id="abt-cntn-2" class="about-content content-gap">Somos una cooperativa dedicada a la creación de aplicaciones que no sólo rescatan la memoria y el arte local, sino que también fomentan la participación activa de comunidades, artistas y gestores culturales.</p>
+            <p id="abt-cntn-2" class="about-content content-gap">Somos una cooperativa dedicada a la <b>creación de aplicaciones</b> que no sólo <b>rescatan la memoria y el arte local</b>, sino que también fomentan la participación activa de comunidades, artistas y gestores culturales.</p>
         </div>
     </div>
 
@@ -84,13 +84,13 @@
                 <h2 id="contact-title" class="sub-title">Contactanos</h2>
                 <form action="" method="post" id="contact-form">
                     <label for="contact-name">Nombre</label>
-                    <input type="text" name="name" id="contact-name" class="inp">
+                    <input type="text" name="name" id="contact-name" class="inp" required>
     
                     <label for="contact-mail">Correo Electronico</label>
-                    <input type="email" name="email" id="contact-mail" class="inp">
+                    <input type="email" name="email" id="contact-mail" class="inp" required>
     
                     <label for="contact-mssg">Mensaje</label>
-                    <textarea name="message" id="contact-mssg" class="inp"></textarea>
+                    <textarea name="message" id="contact-mssg" class="inp" required></textarea>
     
                     <div>
                         <button type="submit" id="contact-btn">Enviar</button>
@@ -106,16 +106,14 @@
                         <li><a href="https://twitter.com/" target="_blank" class="social-icon"><i class="fab fa-twitter"></i>aquario__Oficial</a></li>
                         <li><a href="https://instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i>aquario_Oficial</a></li>
                         <li><a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i>Aquario. A.C.</a></li>
-                        <li><a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="fa-solid fa-envelope"></i>aquario.oficial.bussines@gmail.com</a></li>
+                        <li><a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="fa-solid fa-envelope"></i>aquario.bussines@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    
-
     <%- include('../mod/footer.ejs') %>
-    
+
 </body>
 </html>

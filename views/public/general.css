@@ -2,6 +2,19 @@
 para la barra de navegacion, el footer, la paleta de colores 
 y otras cuestiones que se manejen en todos-mayoria de archivos
 */
+
+:root{
+    --glaucous: #6d87d4;
+    --vista-blue: #7793e8ff;
+    --vista-blue-2: #83a2ffff;
+    --jordy-blue: #9cb0ffff;
+    --periwinkle: #b4bdff;
+    --lavender-web: #dad0ddff;
+    --navajo-white: #fee3bd;
+    --navajo-white-2: #ffdba5ff;
+    --sunset: #fdbf63;
+}
+
 @font-face {
     font-family: 'against';
     src: url('/src/fonts/Against/against\ regular.otf');
@@ -51,20 +64,28 @@ body {
 
 .navBarItem {
     margin: 0;
-    padding: 0 5px 0 5px;
+    padding: 0 10px 0 10px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .navBarLink {
     text-decoration: none;
+    color: var(--vista-blue);
+}
+.navBarLink:hover {
+    text-decoration: underline;
+    color: var(--glaucous);
 }
 
 /* footer */
 footer {
     padding: 20px;
     font-weight: bold;
-    background-color: blue;
+    background-color: var(--glaucous);
 }
 #foot-content {
+    color: white;
     margin: 0;
     padding: 0;
     align-items: center;

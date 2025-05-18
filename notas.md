@@ -51,6 +51,14 @@ git push origin mi-rama-nueva
 }
 
 ### PALETA DE COLORES
-// buscando
+--glaucous: #6d87d4ff;
+--vista-blue: #7793e8ff;
+--vista-blue-2: #83a2ffff;
+--jordy-blue: #9cb0ffff;
+--periwinkle: #b4bdffff;
+--lavender-web: #dad0ddff;
+--navajo-white: #ffe3bbff;
+--navajo-white-2: #ffdba5ff;
+--sunset: #ffd28fff;
 
 ### Preguntar cualquier duda, sin pena
