@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="/views/public/general.css">
     <link rel="stylesheet" href="/views/public/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/src/scss/_buttons.scss">
 </head>
 <body>
 
@@ -18,25 +20,30 @@
     <div id="hero">
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/src/imgs/carrusel/img1.jpg" class="hero-img w-100 d-block" alt="Imagen 1">
-                    <div class="carousel-caption">
+                <div class="carousel-item active text-start">
+                    <img src="/src/imgs/carrusel_definitivo/casadelacultura0.jpg" class="hero-img w-100 d-block" alt="Imagen 1">
+                    <div class="carousel-textleft">
                         <h2>Título 1</h2>
                         <p>Subtítulo descriptivo de la primera imagen.</p>
+                        <a class="boton-slide" href="#">Ver Mas</a>
                     </div>
                 </div>
+
                 <div class="carousel-item">
-                    <img src="/src/imgs/carrusel/img2.jpg" class="hero-img w-100 d-block" alt="Imagen 2">
-                    <div class="carousel-caption">
-                        <h2>Título 2</h2>
-                        <p>Subtítulo descriptivo de la segunda imagen.</p>
+                    <img src="/src/imgs/carrusel_definitivo/laguna_unerg_ais.jpg" class="hero-img w-100 d-block" alt="Imagen 2">
+                    <div class="carousel-textcenter">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="boton-slide" href="#">Ver Mas</a></p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="/src/imgs/carrusel/img3.jpg" class="hero-img w-100 d-block" alt="Imagen 3">
-                    <div class="carousel-caption">
-                        <h2>Título 3</h2>
-                        <p>Subtítulo descriptivo de la tercera imagen.</p>
+
+                    <div class="carousel-item">
+                        <img src="/src/imgs/carrusel_definitivo/morrosaestetis.jpg" class="hero-img w-100 d-block" alt="Imagen 3">
+                        <div class="carousel-textright">
+                            <h2>Título 3</h2>
+                            <p>Subtítulo descriptivo de la tercera imagen.</p>
+                            <a class="boton-slide" href="#">Ver Mas</a>
                     </div>
                 </div>
             </div>
@@ -52,51 +59,88 @@
     <!-- info basica -->
 
         <div id="sites">
-        <h2>Sitios de interés</h2>
+        <h2 class="title-2 animate__animated animate__fadeIn">Sitios de interés</h2>
             <!-- tarjetas con informacion de los sitios culturales o artisticos de interes -->
-             <!-- recomendablemente hacerlo dinamico, sino, hacerlo estatico -->
-        <div id="site-cards">
-            <div class="card" style="width: 18rem;">
+        <div class="cars">
+        
+            <div class="carta animate__animated animate__backInLeft">
                 <img src="/src/imgs/cards/sillyshark.png" class="site-img card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="site-title card-title">Casa de la Cultura</h5>
-                    <p class="site-content card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="/blog/casaCultura" class="site-link btn btn-primary">Go somewhere</a>
+                <h2 class="nombre">Nombre del Usuario</h2>
+                <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum dolorum voluptas
+                    laudantium nihil vero deserunt amet dicta, cupiditate porro doloribus libero sunt aspernatur maxime debitis
+                    corrupti, sed sapiente in?</p>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="/src/imgs/cards/sillyshark.png" class="site-img card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="site-title card-title">Parque Simon Bolivar</h5>
-                    <p class="site-content card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="/blog/parqueSimonB" class="site-link btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="/src/imgs/cards/sillyshark.png" class="site-img card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="site-title card-title">Card title</h5>
-                    <p class="site-content card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="site-link btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+<div class="carta animate__animated animate__backInDown">
+    <img src="/src/imgs/cards/sillyshark.png" class="site-img card-img-top" alt="...">
+    <h2 class="nombre">Nombre del Usuario</h2>
+    <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum dolorum voluptas
+        laudantium nihil vero deserunt amet dicta, cupiditate porro doloribus libero sunt aspernatur maxime debitis
+        corrupti, sed sapiente in?</p>
         </div>
+<div class="carta animate__animated animate__backInRight ">
+    <img src="/src/imgs/cards/sillyshark.png" class="site-img card-img-top" alt="...">
+            <h2 class="nombre">Nombre del Usuario</h2>
+            <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum dolorum voluptas
+                laudantium nihil vero deserunt amet dicta, cupiditate porro doloribus libero sunt aspernatur maxime debitis
+                corrupti, sed sapiente in?</p>
+            </div>
             
-        <div id="view-more">
-            <form action="" method="get">
-                <button type="submit" id="site-btn">Ver más</button>
+            </div>
+            <h2 class="title-2 animate__animated animate__fadeIn">Entradas mas recientes</h2>
+            
+            <div class="cars">
+                <div class="cars">
+                    <div class="carta  animate__animated animate__backInLeft">
+                        <div class="perfil">
+                            <img src="/src/imgs/cards/sillyshark.png" alt="Foto de Perfil" class="foto-perfil">
+                        </div>
+                        <h2 class="nombre">Nombre del Usuario</h2>
+                        <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere mollitia magni ipsa
+                            adipisci autem ea iste perspiciatis deserunt illum! Odio, sequi quae architecto voluptatum sunt aut
+                            natus eligendi facere repellendus?</p>
+                    </div>
+            
+                    <div class="carta  animate__animated animate__backInUp">
+                        <div class="perfil">
+                            <img src="/src/imgs/cards/sillyshark.png" alt="Foto de Perfil" class="foto-perfil">
+                        </div>
+                        <h2 class="nombre">Nombre del Usuario</h2>
+                        <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque maxime quae unde
+                            exercitationem ad, natus officia! Deleniti eius quas molestiae impedit. Quidem atque neque sit dolores?
+                            Totam voluptate magnam reiciendis.</p>
+                    </div>
+<div class="carta  animate__animated animate__backInRight">
+    <div class="perfil">
+        <img src="/src/imgs/cards/sillyshark.png" alt="Foto de Perfil" class="foto-perfil">
+        </div>
+        <h2 class="nombre">Nombre del Usuario</h2>
+        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum dolorum voluptas
+            laudantium nihil vero deserunt amet dicta, cupiditate porro doloribus libero sunt aspernatur maxime debitis
+            corrupti, sed sapiente in?</p>
+        </div>
+        </div>
+        </div>
+
+<div class="contac">
+    <h2>Contactanos</h2>
+    <p>Mantente conectados con nosotros.</p>
+    <h3>Correo:</h3>
+    <form action="/validar" method="post" class="formulario-contac">
+        <input type="email" id="correo" name="correo" class="input-email">
+        <input type="submit" value="enviar" class="boton-contac">
             </form>
         </div>
+            
 
     </div>
 
-    <div id="pruebadeletras">
+    <!-- <div id="pruebadeletras">
         <p>Letras para el documento</p>
         <h1 id="against">Against</h1>
         <h1 id="cinzel">Cinzel</h1>
         <h1 id="creato">Creato</h1>
         <h1 id="recoleta">Recoleta</h1>
-    </div>
+    </div> -->
 
     <%- include('mod/footer.ejs') %>
     
