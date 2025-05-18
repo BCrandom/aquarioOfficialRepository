@@ -28,4 +28,29 @@ git commit -m "Descripción de cambios"
 **Envía los cambios al repositorio**
 git push origin mi-rama-nueva
 
+### LETRAS A UTILIZAR
+@font-face {
+    font-family: 'against';
+    src: url('/src/fonts/Against/against\ regular.otf');
+}
+@font-face {
+    font-family: 'cinzel';
+    src: url('/src/fonts/Cinzel/CinzelDecorative-Regular.otf');
+}
+@font-face {
+    font-family: 'cinzelBold';
+    src: url('/src/fonts/Cinzel/CinzelDecorative-Bold.otf');
+}
+@font-face {
+    font-family: 'creato';
+    src: url('/src/fonts/Creato/CreatoDisplay-Regular.otf');
+}
+@font-face {
+    font-family: 'recoleta';
+    src: url('/src/fonts/Recoleta/Recoleta-RegularDEMO.otf');
+}
+
+### PALETA DE COLORES
+// buscando
+
 ### Preguntar cualquier duda, sin pena
