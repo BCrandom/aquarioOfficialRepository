@@ -1,151 +1,156 @@
-/* general */
+:root {
+    --spacing: 20px;
+    --max-width: 1200px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'creato';
+    line-height: 1.6;
+    background-color: #fefefe;
+}
+
+/* General */
 p {
     font-size: 18px;
+    margin: var(--spacing) 0;
 }
 .sub-title {
     font-family: 'recoleta';
     font-weight: bolder;
     font-size: 48px;
+    margin-bottom: var(--spacing);
 }
 .content-gap {
     margin: 10px;
 }
 
-/* bienvenida ig */
+/* Hero / Bienvenida */
 #hero-about {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-image: url('/src/imgs/about/heroabout.JPG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
+    background: url('/src/imgs/about/heroabout.JPG') center/cover no-repeat;
     height: 400px;
-    object-fit: cover;
-    color: #ffffff;
-    text-shadow: 0 1px 1px black;
-    /* filter: brightness(50%); */
+    color: #fff;
+    text-shadow: 0 1px 2px #000;
+    text-align: center;
 }
 #hero-title {
     font-family: 'cinzelBold';
-    font-size: 80px;
-    font-weight: bolder;
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 #hero-content {
-    font-weight: bold;
     font-size: 20px;
+    font-weight: bold;
 }
 #hero-resalt {
     font-style: italic;
     font-weight: bolder;
 }
 
-/* sobre nosotros */
-#aboutAquario {
+/* Sección genérica */
+.section {
+    padding: 60px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px;
 }
+.section-alt {
+    background-color: var(--periwinkle);
+}
+
+/* About */
 #about-inside {
     display: flex;
     flex-direction: row;
-    width: 800px;
+    gap: var(--spacing);
+    max-width: 800px;
+    width: 100%;
+    align-items: center;
 }
 #about-img {
     width: 200px;
+    border-radius: 12px;
 }
 #abt-cntn-2 {
     text-align: right;
+    flex: 1;
 }
 
-/* mision */
-#missionAquario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 40px;
-    background-color: var(--periwinkle);
-}
+/* Misión */
 #mssn-inside {
     display: flex;
     flex-direction: row;
-    width: 1000px;
+    gap: var(--spacing);
+    max-width: 1000px;
+    width: 100%;
+    align-items: center;
 }
 #mssn-img {
-    width: 400px;
-    height: 450px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
 }
 
-/* vision */
-#visionAquario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 40px;
-}
+/* Visión */
 #vsn-inside {
     display: flex;
     flex-direction: row-reverse;
-    width: 700px;
+    gap: var(--spacing);
+    max-width: 700px;
+    width: 100%;
+    align-items: center;
 }
 #vsn-img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
 }
 
-/* valores */
-#valuesAquario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 40px;
-    background-color: var(--periwinkle);
-}
+/* Valores */
 #vl-inside {
     display: flex;
     flex-direction: row;
-    width: 900px;
+    gap: var(--spacing);
+    max-width: 900px;
+    width: 100%;
 }
 li {
-    margin: 2px 0 15px 0;
+    margin: 0 0 15px 0;
 }
 .ul-gap {
-    margin: 0 10px 0 10px;
+    margin: 0 10px;
 }
 
-/* Sección de contacto */
+/* Contacto */
 #contactAquario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     text-align: center;
-    width: 100%;
     padding: 60px 20px;
 }
 #contactAquario-inside {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
-    width: 80%;
-    max-width: 1000px;
+    gap: 30px;
+    max-width: var(--max-width);
+    width: 100%;
 }
 
 /* Formulario */
 #contact-form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex: 1;
+    min-width: 280px;
     max-width: 500px;
 }
 input, textarea {
@@ -155,7 +160,7 @@ input, textarea {
     border-radius: 8px;
     border: 2px solid black;
     background-color: var(--input-bg);
-    transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease;
 }
 input:focus, textarea:focus {
     border-color: #474747;
@@ -168,52 +173,89 @@ label {
 }
 #contact-btn {
     margin-top: 20px;
-    width: 120px;
+    width: 100%;
+    max-width: 160px;
     height: 45px;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
     border-radius: 8px;
     border: none;
-    box-shadow: 0 4px 2px #00000033;
     background-color: var(--sunset);
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 2px #00000033;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    align-self: center;
 }
 #contact-btn:hover {
     background-color: var(--navajo-white-2);
     box-shadow: 0 3px 1px #0000004d;
 }
 
-/* Redes sociales */
+/* Redes Sociales */
 #socilmediaAquario {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
 }
 #contactFollowAquario ul {
     list-style: none;
-    padding: 20px 0 0 0;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 }
 .social-icon {
-    text-decoration: none;
-    font-weight: bold;
     font-size: 18px;
+    font-weight: bold;
     color: var(--sunset);
+    text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 12px;
-    transition: color 0.3s ease-in-out;
+    gap: 10px;
+    transition: color 0.3s ease;
 }
 .social-icon i {
     font-size: 32px;
     color: var(--sunset);
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease;
 }
 .social-icon:hover, .social-icon i:hover {
     color: var(--navajo-white-2);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    #about-inside,
+    #mssn-inside,
+    #vsn-inside,
+    #vl-inside,
+    #contactAquario-inside {
+        flex-direction: column;
+        align-items: center;
+    }
+    #abt-cntn-2 {
+        text-align: center;
+    }
+    #contact-form {
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    #hero-title {
+        font-size: 48px;
+    }
+    .sub-title {
+        font-size: 36px;
+    }
+    #hero-about {
+        height: 300px;
+    }
+    input, textarea {
+        font-size: 14px;
+    }
+    label {
+        font-size: 16px;
+    }
 }
