@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- CAMBIO: idioma cambiado a español para accesibilidad -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,102 +16,141 @@
     <%- include('../mod/navBar.ejs') %>
 
     <!-- info de la empresa -->
-     <div id="hero-about">
-        <h1 id="hero-title">Conoce Aquario</h1>
-        <p id="hero-content">Sumergete con nosotros en las profundidades de nuestro <span id="hero-resalt">aquario</span></p>
-     </div>
+    <header id="hero-about">
+        <div class="container text-center"> <!-- CAMBIO: centrado con Bootstrap -->
+            <h1 id="hero-title">Conoce Aquario</h1>
+            <p id="hero-content">
+                Sumergete con nosotros en las profundidades de nuestro 
+                <span id="hero-resalt">aquario</span>
+            </p>
+        </div>
+    </header>
 
     <!-- sobre nosotros -->
-    <div id="aboutAquario">
-        <h2 id="about-title" class="sub-title">Sobre Nosotros</h2>
-        <div id="about-inside">
-            <p id="abt-cntn-1" class="about-content content-gap">En un mundo donde la riqueza cultural enfrenta el desafío de la modernización y el olvido, <b><i>Aquario</i> nace como un faro de innovación</b>, combinando tecnología y tradición para <b>revitalizar la identidad cultural del estado.</b></p>
-            <img src="/src/imgs/logos/aquariowobg.png" alt="logo de aquario" title="logo de Aquario" id="about-img" class="content-gap">
-            <p id="abt-cntn-2" class="about-content content-gap">Somos una cooperativa dedicada a la <b>creación de aplicaciones</b> que no sólo <b>rescatan la memoria y el arte local</b>, sino que también fomentan la participación activa de comunidades, artistas y gestores culturales.</p>
+    <section id="aboutAquario" class="py-5">
+        <div class="container">
+            <h2 class="sub-title text-center mb-4" id="about-title">Sobre Nosotros</h2>
+            <div class="row align-items-center"> <!-- CAMBIO: uso de grid -->
+                <div class="col-md-6">
+                    <p class="about-content mb-3">
+                        En un mundo donde la riqueza cultural enfrenta el desafío de la modernización y el olvido, 
+                        <b><i>Aquario</i> nace como un faro de innovación</b>, combinando tecnología y tradición para 
+                        <b>revitalizar la identidad cultural del estado.</b>
+                    </p>
+                    <p class="about-content">
+                        Somos una cooperativa dedicada a la <b>creación de aplicaciones</b> que no sólo 
+                        <b>rescatan la memoria y el arte local</b>, sino que también fomentan la participación activa 
+                        de comunidades, artistas y gestores culturales.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="/src/imgs/logos/aquariowobg.png" alt="logo de aquario" class="img-fluid" id="about-img">
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- mision -->
-    <div id="missionAquario">
-        <h2 id="mssn-title" class="sub-title">Mision</h2>
-        <div id="mssn-inside">
-            <div id="mssn-content-div" class="content-gap">
-                <p class="mssn content">En “Aquario”, nos sumergimos en la exploración y preservación del conocimiento cultural venezolano dentro del estado Guárico, en el municipio Juan Germán Roscio Nieves, utilizando la tecnología como un vehículo para la innovación, la creatividad y el acceso a la información.</p>
-                <p class="mssn content">Nuestro compromiso es transformar el acceso a la cultura mediante herramientas digitales que faciliten la interacción, el aprendizaje y la difusión del patrimonio cultural. A través de un enfoque interdisciplinario, integramos expertos en tecnología, historia, comunicación y diseño para desarrollar soluciones que conecten el pasado con el futuro, haciendo de la cultura un espacio dinámico e inclusivo. Creemos en el poder de la tecnología como un puente vibrante entre el pasado y el presente, permitiendo que comunidades locales y la diáspora venezolana se conecten, se expresen y preserven su identidad.</p>
-            </div>
-            <div id="mssn-img-div" class="content-gap">
-                <img src="/src/imgs/nophoto.jpg" alt="imagen random" id="mssn-img">
+    <section id="missionAquario" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="sub-title text-center mb-4" id="mssn-title">Mision</h2>
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <p class="mssn content">
+                        En <i>“Aquario”</i>, <b>nos sumergimos en la exploración y preservación del conocimiento cultural venezolano</b> dentro del estado Guárico, en el municipio Juan Germán Roscio Nieves, <b>utilizando la tecnología como un vehículo para la innovación, la creatividad y el acceso a la información.</b>
+                    </p>
+                    <p class="mssn content">
+                        Nuestro compromiso es <b>transformar el acceso a la cultura mediante herramientas digitales</b> que faciliten la interacción, el aprendizaje y la <b>difusión del patrimonio cultural.</b> A través de un enfoque interdisciplinario, integramos tecnología, historia, comunicación y diseño para desarrollar soluciones que <b>conecten el pasado con el futuro</b>, haciendo de la cultura un espacio dinámico e inclusivo. Creemos en el poder de la tecnología como un puente vibrante entre el pasado y el presente, permitiendo que comunidades locales se conecten, se expresen y preserven su identidad.
+                    </p>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="/src/imgs/nophoto.jpg" alt="imagen random" class="img-fluid" id="mssn-img">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- vision -->
-    <div id="visionAquario">
-        <h2 id="vsn-title" class="sub-title">Vision</h2>
-        <div id="vsn-inside">
-            <div id="vsn-content-div" class="content-gap">
-                <p class="vsn content">“Aquario” aspira consolidar un proyecto significativo que no solo satisfaga las expectativas de sus integrantes, sino que también se erija como una plataforma dinámica para la exploración, documentación y difusión de la rica y diversa cultura venezolana arraigada específicamente en el estado Guárico, en el municipio Juan Germán Roscio Nieves.</p>
-            </div>
-            <div id="vsn-img-div" class="content-gap">
-                <img src="/src/imgs/nophoto.jpg" alt="imagen random" id="vsn-img">
+    <section id="visionAquario" class="py-5">
+        <div class="container">
+            <h2 class="sub-title text-center mb-4" id="vsn-title">Vision</h2>
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <p class="vsn content">
+                        <i>“Aquario”</i> aspira <b>consolidar un proyecto significativo</b> que no solo satisfaga las expectativas de sus integrantes, sino que también se erija como una plataforma dinámica para <b>la exploración, documentación y difusión de la rica y diversa cultura venezolana</b> arraigada específicamente en el estado Guárico, en el municipio Juan Germán Roscio Nieves.
+                    </p>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="/src/imgs/nophoto.jpg" alt="imagen random" class="img-fluid" id="vsn-img">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- valores -->
-    <div id="valuesAquario">
-        <h2 class="sub-title">En Aquario creemos en...</h2>
-        <div id="vl-inside">
-            <div id="vl-1" class="ul-gap">
-                <ul>
-                    <li class="vl-i vl-i-1"><b>La fuerza de la colaboración.</b> Fomentamos un ambiente en el que todos nuestros miembros se apoyan mutuamente, <b>promoviendo el bienestar colectivo por encima del interés individual.</b></li>
-                    <li class="vl-i vl-i-1"><b>La participación activa de nuestros miembros es fundamental.</b> Cada voz cuenta y cada decisión se toma de manera democrática, asegurando que todos tengan la <b>oportunidad de influir en el rumbo de nuestra cooperativa.</b></li>
-                </ul>
-            </div>
-            <div id="vl-2" class="ul-gap">
-                <ul>
-                    <li class="vl-i vl-i-2"><b>Comprometernos a actuar de manera responsable</b>, tanto social como ambientalmente. Entendemos que nuestras acciones tienen un impacto en la comunidad y en el entorno, y <b>trabajamos para minimizar cualquier efecto negativo.</b></li>
-                    <li class="vl-i vl-i-2"><b>Fomentar un espíritu innovador</b> que nos impulsa a buscar nuevas formas de mejorar nuestros servicios y procesos. <b>Estamos abiertos al cambio y a la adaptación</b>, siempre con el objetivo de satisfacer las necesidades de nuestros miembros.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- contacto -->
-    <div id="contactAquario">
-        <div id="contactAquario-inside">
-            <div id="contactFormAquario" class="contact-gap">
-                <h2 id="contact-title" class="sub-title">Contactanos</h2>
-                <form action="" method="post" id="contact-form">
-                    <label for="contact-name">Nombre</label>
-                    <input type="text" name="name" id="contact-name" class="inp" required>
-    
-                    <label for="contact-mail">Correo Electronico</label>
-                    <input type="email" name="email" id="contact-mail" class="inp" required>
-    
-                    <label for="contact-mssg">Mensaje</label>
-                    <textarea name="message" id="contact-mssg" class="inp" required></textarea>
-    
-                    <div>
-                        <button type="submit" id="contact-btn">Enviar</button>
-                    </div>
-                    
-                </form>
-            </div>
-    
-            <div id="socilmediaAquario" class="contact-gap">
-                <h2 class="sub-title">Siguenos</h2 >
-                <div id="contactFollowAquario">
+    <section id="valuesAquario" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="sub-title text-center mb-4">En Aquario creemos en...</h2>
+            <div class="row">
+                <div class="col-md-6">
                     <ul>
-                        <li><a href="https://twitter.com/" target="_blank" class="social-icon"><i class="fab fa-twitter"></i>aquario__Oficial</a></li>
-                        <li><a href="https://instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i>aquario_Oficial</a></li>
-                        <li><a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i>Aquario. A.C.</a></li>
-                        <li><a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="fa-solid fa-envelope"></i>aquario.bussines@gmail.com</a></li>
+                        <li><b>La fuerza de la colaboración.</b> Fomentamos un ambiente en el que todos nuestros miembros se apoyan mutuamente, <b>promoviendo el bienestar colectivo por encima del interés individual.</b></li>
+                        <li><b>La participación activa de nuestros miembros es fundamental.</b> Cada voz cuenta y cada decisión se toma de manera democrática, asegurando que todos tengan la <b>oportunidad de influir en el rumbo de nuestra cooperativa.</b></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li><b>Comprometernos a actuar de manera responsable</b>, tanto social como ambientalmente. Entendemos que nuestras acciones tienen un impacto en la comunidad y en el entorno, y <b>trabajamos para minimizar cualquier efecto negativo.</b></li>
+                        <li><b>Fomentar un espíritu innovador</b> que nos impulsa a buscar nuevas formas de mejorar nuestros servicios y procesos. <b>Estamos abiertos al cambio y a la adaptación</b>, siempre con el objetivo de satisfacer las necesidades de nuestros miembros.</li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- jerarquía -->
+    <section id="jerarquiAquario" class="py-5">
+        <div class="container text-center">
+            <h2 class="sub-title mb-4" id="jerarquiaTitle">Organigrama</h2>
+            <p><i>Aquario</i> está conformado por un equipo de profesionales comprometidos con la excelencia, la creatividad y la colaboración.</p>
+            <img src="/src/imgs/about/Organigrama_Aquario.png" alt="Organigrama de Aquario" class="img-fluid mt-3">
+        </div>
+    </section>
+
+    <!-- contacto -->
+    <section id="contactAquario" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h2 class="sub-title">Contactanos</h2>
+                    <form action="" method="post" id="contact-form">
+                        <div class="mb-3">
+                            <label for="contact-name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="contact-name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-mail" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="contact-mail" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-mssg" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="contact-mssg" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="sub-title">Siguenos</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="https://twitter.com/" target="_blank" class="social-icon"><i class="fab fa-twitter"></i> aquario__Oficial</a></li>
+                        <li><a href="https://instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i> aquario_Oficial</a></li>
+                        <li><a href="https://linkedin.com/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i> Aquario. A.C.</a></li>
+                        <li><a href="mailto:aquario.bussines@gmail.com" class="social-icon"><i class="fa-solid fa-envelope"></i> aquario.bussines@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <%- include('../mod/footer.ejs') %>
 
