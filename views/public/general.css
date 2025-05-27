@@ -52,6 +52,8 @@ y otras cuestiones que se manejen en todos-mayoria de archivos
 body {
     padding: 0;
     margin: 0;
+    background: #6D87D4FF;
+background: linear-gradient(90deg,rgba(109, 135, 212, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(109, 135, 212, 1) 100%);
 }
 
 #navBarList {
@@ -72,6 +74,7 @@ body {
 .navBarLink {
     text-decoration: none;
     color: var(--vista-blue);
+    font-family: Against;
 }
 .navBarLink:hover {
     text-decoration: underline;
