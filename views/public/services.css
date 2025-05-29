@@ -1,0 +1,122 @@
+:root {
+    --color-bg: #f5f5f5;
+    --color-text: #1a1a1a;
+    --color-primary: #005f73;
+    --color-secondary: #0a9396;
+    --color-accent: #94d2bd;
+    --color-highlight: #ee9b00;
+    --color-muted: #888;
+    --font-body: 'Inter', sans-serif;
+    --max-width: 960px;
+  }
+  
+  section.py-5.bg-light {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding: 4rem 2rem;
+    font-family: var(--font-body);
+  }
+  
+  section h2.sub-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  section h2.sub-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 1rem auto 0;
+    background: var(--color-accent);
+    border-radius: 4px;
+  }
+  
+  section h3 {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    color: var(--color-secondary);
+  }
+  
+  section h4 {
+    font-size: 1.3rem;
+    color: var(--color-highlight);
+    margin-top: 2rem;
+  }
+  
+  section p,
+  section li {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+    font-size: 1.05rem;
+  }
+  
+  section strong {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+  
+  section ul,
+  section ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  section ul ul,
+  section ol ol {
+    margin-top: 0.5rem;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid var(--color-accent);
+    margin: 2rem 0;
+  }
+  
+  @media (min-width: 768px) {
+    section.py-5.bg-light {
+      padding: 6rem 3rem;
+    }
+  
+    section h2.sub-title {
+      font-size: 3rem;
+    }
+  
+    section h3 {
+      font-size: 2rem;
+    }
+  
+    section h4 {
+      font-size: 1.5rem;
+    }
+  
+    section p,
+    section li {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    section h2.sub-title::after {
+      width: 60px;
+    }
+  
+    section h2.sub-title {
+      font-size: 2rem;
+    }
+  
+    section h3 {
+      font-size: 1.5rem;
+    }
+  
+    section h4 {
+      font-size: 1.2rem;
+    }
+  
+    section {
+      padding: 3rem 1rem;
+    }
+  }  
