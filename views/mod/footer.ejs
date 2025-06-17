@@ -1,12 +1,40 @@
 <footer>
     <p id="foot-content">Aquario &copy; 2025</p>
     <div class="contac">
-        <h2>Contáctanos</h2>
-        <p>Mantente conectado con nosotros.</p>
-        <form action="#" method="get" class="formulario-contac">
+        <h2>¿Quieres saber más?</h2>
+        <p>Mantente conectado con nosotros y recibe las más recientes actualizaciones.</p>
+        <form id="newsletterForm" class="formulario-contac">
             <label for="correo">Correo:</label>
-            <input type="email" id="correo" name="correo" class="input-email">
+            <input type="email" id="correo" name="correo" class="input-email" required>
             <input type="submit" value="enviar" class="boton-contac">
         </form>
+        <div id="mensajeEstado"></div> <!-- Mostrar mensaje de éxito o error -->
     </div>
 </footer>
+
+<script>
+document.getElementById("newsletterForm").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Evita recargar la página
+
+    const email = document.getElementById("correo").value;
+
+    // Validar que el correo sea correcto antes de enviarlo
+    if (!email.includes("@")) {
+        document.getElementById("mensajeEstado").innerText = "Correo no válido.";
+        return;
+    }
+
+    try {
+        const response = await fetch("/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email }),
+        });
+
+        const resultado = await response.text();
+        document.getElementById("mensajeEstado").innerText = resultado;
+    } catch (error) {
+        document.getElementById("mensajeEstado").innerText = "Error al enviar el correo.";
+    }
+});
+</script>

@@ -1,8 +1,10 @@
 {
   "dependencies": {
     "animate.css": "^4.1.1",
+    "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
+    "nodemailer": "^7.0.3",
     "nodemon": "^3.1.10"
   },
   "name": "espresjotoese",

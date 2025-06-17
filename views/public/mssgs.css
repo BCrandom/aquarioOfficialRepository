@@ -1,0 +1,50 @@
+.mensaje-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0066cc;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+  }
+  .mensaje-btn:hover {
+    background: #0055aa;
+  }
+  
+  .mensaje-panel {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    overflow-y: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 999;
+  }
+  .mensaje-panel.visible {
+    display: block;
+  }
+  .mensaje {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .mensaje h4 {
+    margin: 0 0 5px;
+  }
+  .mensaje small {
+    color: #888;
+  }  
