@@ -1,7 +1,9 @@
 # Aquario
 Repositorio para el desarrollo de la página web de el proyecto "Aquario".
 
-![Aquario](./src/imgs/logos/aquariowobg.png)
+<p align="center">
+  <img src="./src/imgs/logos/aquariocircle.png" alt="Logo Aquario" width="300">
+</p>
 
 ## Colaboradores
 - Alixmar Machuca
