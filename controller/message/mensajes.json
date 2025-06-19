@@ -4,6 +4,11 @@
             "titulo": "Bienvenida", 
             "cuerpo": "¡Hola! Este es el primer mensaje del sitio. Gracias por visitarnos.", 
             "fecha": "2025-06-17" 
+        },
+        { 
+            "titulo": "¿Newsletter?", 
+            "cuerpo": "¿Viste que recibirás correos personalizados de Aquario 😯? ¡Deberías intentarlo!", 
+            "fecha": "2025-06-18" 
         }
     ]
 }

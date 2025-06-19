@@ -108,6 +108,7 @@
     margin: 0 10px 0 10px;
 }
 .site-img {
+    border-radius: 8px;
     height: 140px;
 }
 #site-btn {

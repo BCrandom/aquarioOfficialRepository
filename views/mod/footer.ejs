@@ -1,6 +1,9 @@
 <footer>
-    <p id="foot-content">Aquario &copy; 2025</p>
-<p>Todos los contenidos y el nombre comercial están protegidos por la ley. Uso no autorizado estrictamente prohibido</p>
+    <div id="foot-content">
+        <p class="f-t">Aquario &copy; 2025</p>
+        <p class="f-p">Todos los contenidos y el nombre comercial están protegidos por la ley. Uso no autorizado estrictamente prohibido</p>
+    </div>
+    
     <div class="contac">
         <h2>¿Quieres saber más?</h2>
         <p>Mantente conectado con nosotros y recibe las más recientes actualizaciones.</p>
@@ -14,28 +17,48 @@
 </footer>
 
 <script>
-document.getElementById("newsletterForm").addEventListener("submit", async function(event) {
-    event.preventDefault(); // Evita recargar la página
-
-    const email = document.getElementById("correo").value;
-
-    // Validar que el correo sea correcto antes de enviarlo
-    if (!email.includes("@")) {
-        document.getElementById("mensajeEstado").innerText = "Correo no válido.";
-        return;
-    }
-
-    try {
-        const response = await fetch("/send-email", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email }),
-        });
-
-        const resultado = await response.text();
-        document.getElementById("mensajeEstado").innerText = resultado;
-    } catch (error) {
-        document.getElementById("mensajeEstado").innerText = "Error al enviar el correo.";
-    }
-});
+    document.getElementById("newsletterForm").addEventListener("submit", async function(event) {
+        event.preventDefault(); // Evita recargar la página
+    
+        const emailInput = document.getElementById("correo");
+        const email = emailInput.value;
+    
+        // Validar que el correo sea correcto antes de enviarlo
+        if (!email.includes("@")) {
+            Swal.fire({
+                icon: "error",
+                title: "Correo no válido",
+                text: "Por favor, ingresa un correo válido.",
+            });
+            return;
+        }
+    
+        try {
+            const response = await fetch("/send-email", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email }),
+            });
+    
+            const resultado = await response.text();
+    
+            Swal.fire({
+                icon: response.ok ? "success" : "error",
+                title: response.ok ? "¡Suscripción exitosa!" : "Error",
+                text: resultado,
+            });
+    
+            // Limpiar el input después de enviar el correo
+            if (response.ok) {
+                emailInput.value = "";
+            }
+    
+        } catch (error) {
+            Swal.fire({
+                icon: "error",
+                title: "Error al enviar el correo",
+                text: "Ocurrió un problema, intenta más tarde.",
+            });
+        }
+    });
 </script>
