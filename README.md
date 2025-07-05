@@ -14,24 +14,21 @@ Repositorio para el desarrollo de la página web de el proyecto "Aquario".
 - Moises Requena
 - Valentina Oropeza
 
-<div 
-  style="width:552px;height:167px;border:2px solid #5b67fa;border-radius:8px;
-         background:linear-gradient(to right,#f6f7fb,#e3e7ff);font-family:sans-serif;
-         padding:16px;box-sizing:border-box;display:flex;flex-direction:column;
-         justify-content:center;transition:box-shadow 0.3s ease;"
-  onmouseover="this.style.boxShadow='0 0 10px rgba(91, 103, 250, 0.5)';"
-  onmouseout="this.style.boxShadow='none';"
->
-  <a href="https://bcrandom306.itch.io/bugquest-seaquest-remake" target="_blank" style="text-decoration:none;">
-    <div style="font-size:1.3em;font-weight:bold;color:#000;">
-      Bugquest (Seaquest Remake)
+- <iframe frameborder="0" src="https://itch.io/embed/3683526?link_color=5b67fa" width="552" height="167"><a href="">Bugquest (Seaquest Remake) by bcrandom306</a></iframe>
+
+<div style="display: flex; align-items: center; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; max-width: 700px;">
+    <div style="flex-shrink: 0;">
+      <img src="https://img.itch.zone/aW1hZ2UvMTcxMTExMi8xMDA4MTg0OC5wbmc=/347x500/8TADWb.png" alt="Bugquest Logo" style="width: 120px; height: 120px; object-fit: cover;">
     </div>
-    <div style="font-size:1em;color:#555;margin-bottom:12px;">
-      by bcrandom306
+    <div style="padding: 12px 16px; flex-grow: 1;">
+      <div style="font-size: 18px; font-weight: bold;">Bugquest (Seaquest Remake)</div>
+      <div style="color: #555; margin-bottom: 4px;">by <span style="font-weight: bold;">bcrandom306</span></div>
+      <div style="color: #777; font-size: 14px;">Remake de Seaquest para Atari 2600 en LÖVE2D (pero t...</div>
+      <a href="https://itch.io](https://bcrandom306.itch.io/bugquest-seaquest-remake" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 12px; background-color: #665EFF; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 14px;">
+        Download on itch.io
+      </a>
     </div>
-    <div style="display:inline-block;background-color:#5b67fa;color:white;
-                padding:8px 12px;border-radius:4px;font-size:0.9em;text-align:center;">
-      Play on Itch.io
+    <div style="padding: 0 12px;">
+      <img src="https://static.itch.io/images/itchio-textless-black.svg" alt="itch.io" style="height: 20px;">
     </div>
-  </a>
-</div>
+  </div>
